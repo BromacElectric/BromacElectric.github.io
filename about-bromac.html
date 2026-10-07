@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Learn more about Bromac Electric Inc. and Utility Ex Inc., providing commercial electrical construction, excavation and high voltage services.">
+
+  <title>About Us | Bromac Electric & Utility Ex</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+
+    /* =========================
+       ABOUT HERO
+    ========================= */
+
+    .about-hero {
+      min-height: 520px;
+      background: var(--mint);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-hero-content {
+      padding: 90px 8vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      margin: 0 0 22px;
+    }
+
+    .about-hero h1 {
+      margin: 0;
+      font-size: clamp(52px, 7vw, 100px);
+      line-height: .88;
+      letter-spacing: -.065em;
+      font-weight: 600;
+      max-width: 650px;
+    }
+
+    .about-hero-text {
+      margin-top: 35px;
+      max-width: 510px;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .about-hero-image {
+      background:
+        linear-gradient(rgba(23,26,24,.18), rgba(23,26,24,.18)),
+        url("images/about-hero.jpg") center center / cover no-repeat;
+      min-height: 520px;
+    }
+
+
+
+
+    /* =========================
+       COMPANY SECTIONS
+    ========================= */
+
+    .company-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 500px;
+    }
+
+    .company-image {
+      min-height: 500px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .bromac-image {
+      background-image:
+        linear-gradient(rgba(23,26,24,.12), rgba(23,26,24,.12)),
+        url("bromac-owner.jpeg");
+    }
+
+    .utility-image {
+      background-image:
+        linear-gradient(rgba(23,26,24,.12), rgba(23,26,24,.12)),
+        url("utility-ex-about.png");
+    }
+
+    .company-content {
+      padding: 90px 8vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .company-section:nth-of-type(odd) .company-content {
+      background: var(--mint);
+    }
+
+    .company-section:nth-of-type(even) .company-content {
+      background: #f5f5f5;
+    }
+
+    .company-content .eyebrow {
+      margin-bottom: 18px;
+    }
+
+.company-content h2 {
+  margin: 0 0 25px;
+  font-size: clamp(26px, 2.7vw, 40px);
+  line-height: .95;
+  letter-spacing: -.04em;
+  font-weight: 600;
+}
+
+    .company-content p {
+      max-width: 520px;
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+
+
+
+    /* =========================
+   CTA
+========================= */
+
+.about-cta {
+  background: var(--dark);
+  color: #fff;
+  padding: 110px 8vw;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle green accent */
+.about-cta::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(74, 203, 123, .25);
+  border-radius: 50%;
+  right: -100px;
+  bottom: -140px;
+}
+
+.about-cta h2 {
+  margin: 0 0 25px;
+  max-width: 800px;
+  font-size: clamp(48px, 7vw, 90px);
+  line-height: .9;
+  letter-spacing: -.065em;
+  font-weight: 600;
+}
+
+.about-cta p {
+  margin: 0;
+  max-width: 550px;
+  color: rgba(255,255,255,.72);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* LARGE CONTACT BUTTON */
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  padding: 30px 40px;
+  background: var(--mint);
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  transition: all .25s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button::after {
+  content: "→";
+  margin-left: 20px;
+  font-size: 28px;
+  transition: transform .25s ease;
+}
+
+.cta-button:hover {
+  background: var(--green);
+  transform: translateY(-5px);
+}
+
+.cta-button:hover::after {
+  transform: translateX(7px);
+}
+
+
+/* =========================
+   CTA MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .about-cta {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 85px 7vw;
+  }
+
+  .cta-button {
+    min-height: 100px;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 680px) {
+
+  .about-cta {
+    padding: 70px 7vw;
+    gap: 35px;
+  }
+
+  .about-cta h2 {
+    font-size: 52px;
+  }
+
+  .about-cta p {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    min-height: 90px;
+    padding: 25px;
+    font-size: 15px;
+  }
+}
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .about-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .about-hero-content {
+        padding: 75px 7vw;
+      }
+
+      .about-hero-image {
+        min-height: 400px;
+      }
+
+      .about-intro {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 75px 7vw;
+      }
+
+      .company-section {
+        grid-template-columns: 1fr;
+      }
+
+      .company-image {
+        min-height: 380px;
+      }
+
+      .company-content {
+        padding: 70px 7vw;
+      }
+
+      .values-header {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .value-item {
+        border-bottom: 1px solid #ddd;
+      }
+
+      .value-item:nth-child(2) {
+        border-right: none;
+      }
+
+      .about-cta {
+        grid-template-columns: 1fr;
+        padding: 75px 7vw;
+      }
+    }
+
+
+    @media (max-width: 680px) {
+
+      .about-hero-content {
+        padding: 65px 7vw;
+      }
+
+      .about-hero h1 {
+        font-size: 58px;
+      }
+
+      .about-hero-text {
+        font-size: 15px;
+      }
+
+      .about-hero-image {
+        min-height: 300px;
+      }
+
+      .about-intro {
+        padding: 65px 7vw;
+      }
+
+      .company-image {
+        min-height: 300px;
+      }
+
+      .company-content {
+        padding: 60px 7vw;
+      }
+
+      .values-section {
+        padding: 65px 7vw;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .value-item,
+      .value-item:not(:first-child) {
+        padding: 30px 0;
+        border-right: none;
+      }
+
+      .value-number {
+        margin-bottom: 25px;
+      }
+
+      .about-cta {
+        padding: 65px 7vw;
+      }
+
+    }
+
+    /* =========================
+   SERVICE AREA TICKER
+========================= */
+
+.service-ticker {
+  width: 100%;
+  overflow: hidden;
+  background: var(--dark);
+  color: #fff;
+  border-top: 1px solid rgba(255,255,255,.15);
+  border-bottom: 1px solid rgba(255,255,255,.15);
+  white-space: nowrap;
+}
+
+.ticker-track {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+.ticker-track span {
+  display: inline-flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  padding: 18px 35px;
+}
+
+.ticker-track i {
+  color: var(--green);
+  font-size: 12px;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 680px) {
+
+  .ticker-track {
+    animation-duration: 28s;
+  }
+
+  .ticker-track span {
+    font-size: 10px;
+    letter-spacing: .13em;
+    padding: 16px 25px;
+  }
+
+  .ticker-track span::after {
+    margin-left: 25px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <a href="index.html" class="brand" aria-label="Bromac Electric home">
+
+    <span class="brand-mark" aria-hidden="true">
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+
+    <span class="brand-name">
+      BROMAC<br>
+      <b>ELECTRIC</b>
+    </span>
+
+  </a>
+
+
+  <button
+    class="menu-toggle"
+    aria-label="Open navigation"
+    aria-expanded="false">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </button>
+
+
+  <nav class="main-nav">
+
+    <a href="index.html">
+      BROMAC ELECTRIC INC.<br>
+      SERVICES
+    </a>
+
+    <a href="utility-ex-services.html">
+      UTILITY EX INC.<br>
+      SERVICES
+    </a>
+
+    <a href="bromac-projects.html">
+      PROJECTS
+    </a>
+
+    <a href="about-bromac.html">
+      ABOUT US
+    </a>
+
+    <a href="contact-bromac.html">
+      CONTACT US
+    </a>
+
+  </nav>
+
+</header>
+
+<!-- SERVICE AREA TICKER -->
+
+<div class="service-ticker" aria-label="Service areas">
+  <div class="ticker-track">
+    <span>York & Durham Regions <i class="fa-solid fa-location-dot" aria-hidden="true"></i> </span>
+    <span>Kawartha Lakes <i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+    <span>Simcoe County & Surrounding Areas <i class="fa-solid fa-location-dot" aria-hidden="true"></i> </span>
+    <span>Peterborough <i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+ 
+
+    <!-- Duplicate for seamless scrolling -->
+    <span>York & Durham Regions <i class="fa-solid fa-location-dot" aria-hidden="true"></i> </span>
+    <span>Kawartha Lakes <i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+    <span>Simcoe County & Surrounding Areas <i class="fa-solid fa-location-dot" aria-hidden="true"></i> </span>
+    <span>Peterborough <i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+   
+  </div>
+</div>
+
+<main>
+
+
+
+
+
+
+
+
+
+  <!-- BROMAC -->
+
+  <section class="company-section">
+
+    <div class="company-image bromac-image">
+      <img src="bromac-owner.jpeg" alt="Bromac Electric Owner">
+    </div>
+
+    <div class="company-content">
+
+      <p class="eyebrow">
+        BROMAC ELECTRIC INC.
+      </p>
+
+      <h2>
+        COMMERCIAL ELECTRICAL CONSTRUCTION
+      </h2>
+
+      <p>
+  
+
+Family owned and operated since 2019, Bromac Electric is backed by 46 years of electrical experience. We combine decades of trusted industry expertise with top-tier electrical solutions to deliver dependable results for our clients. <br><br>
+
+We are solution providers who take pride in seeing projects through to completion, from the initial planning stages to the final details. We value the long-standing relationships we have built with our business partners and project owners and understand that successful projects are built on trust, communication and a commitment to doing things right.<br><br>
+
+At Bromac Electric, we are invested in providing alternative construction options and are always looking for practical, cost-effective strategies that benefit our clients and owner groups. By combining experience with a solutions-focused approach, we work to deliver quality electrical services while helping our clients make informed decisions throughout every stage of their project.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- UTILITY EX -->
+
+  <section class="company-section">
+
+   
+
+    <div class="company-content">
+
+      <p class="eyebrow">
+        UTILITY EX INC.
+      </p>
+
+      <h2>
+      
+UTILITY EXCAVATION & HIGH VOLTAGE
+      </h2>
+
+      <p>
+      With over 15 years of expertise in power distribution and excavation, we provide underground infrastructure to owners, general contractors, electrical contractors and utility companies. Additionally, we offer a full range of excavation services.<br><br>
+
+ We deliver expert craftsmanship and unmatched precision. Whether you're upgrading infrastructure, preparing for new construction, or tackling a system overhaul, we handle projects of all sizes with a focus on safety, quality, and efficiency.<br><br>
+
+At Utility Ex we understand the unique challenges of Central Ontario and provide tailored, lasting solutions. When you partner with us, you’re choosing a team committed to integrity, excellence, and customer satisfaction.
+      </p>
+
+    </div>
+
+    <div class="company-image utility-image"></div>
+
+  </section>
+
+
+
+ 
+
+
+  <!-- CTA -->
+<section class="about-cta">
+
+  <div>
+    <h1>
+      HAVE A PROJECT<br>
+      IN MIND?
+    </h1>
+
+    <p>
+      Let’s talk about how we can help bring it to completion.
+    </p>
+  </div>
+
+  <a href="contact-bromac.html" class="cta-button">
+    CONTACT US
+  </a>
+
+</section>
+
+<section class="quick-info" id="contact">
+<div class="instagram-links">
+
+  <a class="instagram-item" href="BROMAC-INSTAGRAM-URL" target="_blank" rel="noopener" aria-label="Bromac Electric Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+      <circle cx="17.5" cy="6.5" r="1"></circle>
+    </svg>
+    <span>Bromac Electric</span>
+  </a>
+
+  <a class="instagram-item" href="UTILITY-EX-INSTAGRAM-URL" target="_blank" rel="noopener" aria-label="Utility Ex Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+      <circle cx="17.5" cy="6.5" r="1"></circle>
+    </svg>
+    <span>Utility Ex</span>
+  </a>
+
+</div>
+
+
+      <p class="tagline">Where Expertise Shapes Impact</p>
+
+<div class="contact-details">
+
+  <a href="tel:+19059950862">
+    <span class="icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21.7 16.9l-4.1-1.8c-.5-.2-1.1-.1-1.5.3l-1.8 1.8c-2.8-1.4-5.1-3.7-6.5-6.5l1.8-1.8c.4-.4.5-1 .3-1.5L8.1 3.3C7.9 2.8 7.4 2.5 6.8 2.5H4.2C3.5 2.5 3 3 3 3.7 3 13.2 10.8 21 20.3 21c.7 0 1.2-.5 1.2-1.2v-2.6c0-.6-.3-1.1-.8-1.3z"/>
+      </svg>
+    </span>
+    <span>905-995-0862</span>
+  </a>
+
+  <a href="mailto:info@bromacelectric.ca">
+    <span class="icon">✉</span>
+    <span>info@bromacelectric.ca</span>
+  </a>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
