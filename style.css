@@ -4066,6 +4066,38 @@ align-items: flex-start;
     width: 110px;
   }
 }
+/* Hero Panel Headings */
+.panel-footer h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+/* Learn More Links */
+.learn-more {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .panel-footer h1 {
+    font-size: 30px;
+  }
+
+  .learn-more {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
 
 
 
