@@ -3695,6 +3695,13 @@ align-items: flex-start;
   }
 }
 
+/* Make hero panel headings bigger on mobile */
+@media (max-width: 768px) {
+  .hero .panel-footer h1 {
+    font-size: clamp(26px, 7vw, 36px) !important;
+    line-height: 1.1 !important;
+  }
+}
 
 
 
