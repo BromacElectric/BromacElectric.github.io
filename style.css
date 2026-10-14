@@ -402,47 +402,10 @@ body {
   height: 100%;
 }
 
-.bolt-mobile {
-  display: none;
-}
 
-.bolt-divider polygon {
-  fill: none;
-  stroke: #777;
-  stroke-width: 1.5;
-  vector-effect: non-scaling-stroke;
-}
 
-/* MOBILE */
-@media (max-width: 680px) {
 
-  .bolt-divider {
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    width: 100%;
-    height: 45px;
-    transform: translateY(-50%);
-  }
 
-  .bolt-desktop {
-    display: none;
-  }
-
-  .bolt-mobile {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.icon svg {
-  width: 18px;
-  height: 18px;
-  fill: #000;
-  display: block;
-}
 
 /* Make overall text slightly bolder */
 body {
@@ -628,9 +591,7 @@ body {
     height: 100%;
   }
 
-  .bolt-mobile {
-    display: none;
-  }
+
 }
 
 /* LIGHTNING LINE */
@@ -643,29 +604,6 @@ body {
   vector-effect: non-scaling-stroke;
 }
 
-/* MOBILE */
-@media (max-width: 680px) {
-
-  .bolt-divider {
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    width: 100%;
-    height: 55px;
-    transform: translateY(-50%);
-  }
-
-  .bolt-desktop {
-    display: none;
-  }
-
-  .bolt-mobile {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
 
 
 /* PHONE ICON */
@@ -1262,16 +1200,6 @@ align-items: flex-start;
 }
 
 /* LIGHTNING BOLT */
-.bolt-divider {
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  top: 0;
-  width: 82px;
-  height: 100%;
-  transform: translateX(-50%);
-  pointer-events: none;
-}
 
 .bolt-desktop {
   display: block;
@@ -1279,143 +1207,14 @@ align-items: flex-start;
   height: 100%;
 }
 
-.bolt-mobile {
-  display: none;
-}
-
 .bolt-desktop polyline {
   fill: none;
   stroke: #fff;
-  stroke-width: 8;
+  stroke-width: 6;
   stroke-linejoin: round;
   stroke-linecap: round;
 }
 
-/* =========================================
-   MOBILE HERO
-========================================= */
-
-@media (max-width: 768px) {
-
-  .hero {
-    position: relative !important;
-    display: block !important;
-    width: 100% !important;
-    height: 850px !important;
-    min-height: 0 !important;
-    overflow: hidden !important;
-  }
-
-  .hero .hero-panel {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: 100% !important;
-    height: 100% !important;
-    min-height: 0 !important;
-    margin: 0 !important;
-    overflow: hidden !important;
-  }
-
-  /* The clipping follows the exact mobile SVG bolt path. */
-  .hero .bromac-panel {
-    z-index: 1 !important;
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 62%,
-      50% 62%,
-      39.2857% 25%,
-      0 38%
-    ) !important;
-    -webkit-clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 62%,
-      50% 62%,
-      39.2857% 25%,
-      0 38%
-    ) !important;
-  }
-
-  .hero .utility-panel {
-    z-index: 2 !important;
-    clip-path: polygon(
-      0 38%,
-      39.2857% 25%,
-      50% 62%,
-      100% 62%,
-      100% 100%,
-      0 100%
-    ) !important;
-    -webkit-clip-path: polygon(
-      0 38%,
-      39.2857% 25%,
-      50% 62%,
-      100% 62%,
-      100% 100%,
-      0 100%
-    ) !important;
-  }
-
-  .hero .hero-panel .hero-image {
-    position: absolute !important;
-    top: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    max-width: none !important;
-    object-fit: cover !important;
-    object-position: center center !important;
-    display: block !important;
-  }
-
-  .hero .hero-panel .panel-overlay {
-    position: absolute !important;
-    inset: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  .hero .hero-panel .panel-footer {
-    position: absolute !important;
-    left: 25px !important;
-    right: 25px !important;
-    z-index: 5 !important;
-  }
-
-  .hero .bromac-panel .panel-footer {
-    bottom: 53% !important;
-  }
-
-  .hero .utility-panel .panel-footer {
-    bottom: 30px !important;
-  }
-
-
-
-  .hero .bolt-desktop {
-    display: none !important;
-  }
-
-  .hero .bolt-mobile {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  .hero .bolt-mobile polyline {
-    fill: none !important;
-    stroke: #fff !important;
-    stroke-width: 8 !important;
-    stroke-linejoin: round !important;
-    stroke-linecap: round !important;
-  }
-}
 
 .company-image {
   overflow: hidden;
@@ -1480,7 +1279,7 @@ align-items: flex-start;
   }
 
   .quick-info .tagline {
-    margin-bottom: 110px;
+    margin-bottom: 18px;
     font-size: 14px;
   }
 
@@ -1968,36 +1767,7 @@ align-items: flex-start;
 
 }
 
-/* =========================================
-   MOBILE HERO IMAGE FIX
-========================================= */
 
-@media (max-width: 768px) {
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-
-  .hero-panel {
-    position: relative;
-    width: 100%;
-    height: 55vh;
-    min-height: 400px;
-    overflow: hidden;
-  }
-
-  .hero-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
 
   /* Bromac image */
   .bromac-panel .hero-image {
@@ -2025,13 +1795,6 @@ align-items: flex-start;
     margin-bottom: 15px;
   }
 
-  /* Horizontal bolt between the two images */
-  .bolt-divider {
-    position: absolute;
-    width: 100%;
-    height: 35px;
-    z-index: 5;
-  }
 
   .bolt-desktop {
     display: none;
@@ -2390,20 +2153,9 @@ body {
   }
 }
 
-.bolt-divider {
-  position: absolute;
-  z-index: 10;
-  pointer-events: none;
-}
+
 
 /* DESKTOP */
-.bolt-divider {
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 82px;
-  transform: translateX(-50%);
-}
 
 .bolt-desktop {
   display: block;
@@ -2411,40 +2163,6 @@ body {
   height: 100%;
 }
 
-.bolt-mobile {
-  display: none;
-}
-
-.bolt-divider polygon {
-  fill: none;
-  stroke: #777;
-  stroke-width: 1.5;
-  vector-effect: non-scaling-stroke;
-}
-
-/* MOBILE */
-@media (max-width: 680px) {
-
-  .bolt-divider {
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    width: 100%;
-    height: 45px;
-    transform: translateY(-50%);
-  }
-
-  .bolt-desktop {
-    display: none;
-  }
-
-  .bolt-mobile {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
 
 .icon svg {
   width: 18px;
@@ -2610,71 +2328,7 @@ body {
   white-space: nowrap;
 }
 
-/* =========================
-   LIGHTNING DIVIDER
-========================= */
 
-.bolt-divider {
-  position: absolute;
-  z-index: 10;
-  pointer-events: none;
-}
-
-/* DESKTOP */
-@media (min-width: 681px) {
-
-  .bolt-divider {
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 82px;
-    transform: translateX(-50%);
-  }
-
-  .bolt-desktop {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  .bolt-mobile {
-    display: none;
-  }
-}
-
-/* LIGHTNING LINE */
-.bolt-divider polyline {
-  fill: none;
-  stroke: #777;
-  stroke-width: 3;
-  stroke-linecap: square;
-  stroke-linejoin: miter;
-  vector-effect: non-scaling-stroke;
-}
-
-/* MOBILE */
-@media (max-width: 680px) {
-
-  .bolt-divider {
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    width: 100%;
-    height: 55px;
-    transform: translateY(-50%);
-  }
-
-  .bolt-desktop {
-    display: none;
-  }
-
-  .bolt-mobile {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
 
 
 /* PHONE ICON */
@@ -3161,86 +2815,6 @@ align-items: flex-start;
 }
 
 
-/* =========================================
-   LIGHTNING-SHAPED HERO PHOTO DIVIDER
-   ========================================= */
-
-.hero {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: calc(100vh - 221px);
-  min-height: 500px;
-  overflow: hidden;
-}
-
-/* Both panels occupy the full hero so they
-   can be clipped along the exact bolt path */
-.hero-panel {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-/* -----------------------------------------
-   BROMAC — LEFT SIDE
-   ----------------------------------------- */
-
-.bromac-panel {
-  left: 0;
-  z-index: 1;
-
-  clip-path: polygon(
-    0 0,
-    calc(50% + 9.84px) 0,
-    calc(50% - 9.84px) 50%,
-    calc(50% + 18.04px) 39.2857%,
-    calc(50% - 9.84px) 100%,
-    0 100%
-  );
-}
-
-/* Keep Bromac's photo approximately half-screen,
-   with enough extra width to reach the bolt */
-.bromac-panel .hero-image,
-.bromac-panel .panel-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(50% + 22px);
-  height: 100%;
-}
-
-/* -----------------------------------------
-   UTILITY EX — RIGHT SIDE
-   ----------------------------------------- */
-
-.utility-panel {
-  right: 0;
-  z-index: 1;
-
-  clip-path: polygon(
-    calc(50% + 9.84px) 0,
-    100% 0,
-    100% 100%,
-    calc(50% - 9.84px) 100%,
-    calc(50% + 18.04px) 39.2857%,
-    calc(50% - 9.84px) 50%
-  );
-}
-
-/* Keep Utility EX's photo approximately half-screen */
-.utility-panel .hero-image,
-.utility-panel .panel-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: auto;
-  width: calc(50% + 22px);
-  height: 100%;
-}
 
 /* -----------------------------------------
    TEXT STAYS ON ITS OWN SIDE
@@ -3256,79 +2830,11 @@ align-items: flex-start;
   right: 40px;
 }
 
-/* -----------------------------------------
-   LIGHTNING BOLT
-   ----------------------------------------- */
 
-.bolt-divider {
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  top: 0;
-  width: 82px;
-  height: 100%;
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-
-.bolt-desktop {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.bolt-desktop polyline {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 8;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
 
 @media (max-width: 768px) {
 
-  /* HERO */
-  .hero {
-    position: relative !important;
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    overflow: hidden !important;
-  }
 
-  /* BOTH PANELS */
-  .hero .hero-panel {
-    position: relative !important;
-    display: block !important;
-
-    top: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-
-    width: 100% !important;
-    height: 50vh !important;
-    min-height: 400px !important;
-
-    margin: 0 !important;
-
-    clip-path: none !important;
-    -webkit-clip-path: none !important;
-
-    overflow: hidden !important;
-  }
-
-  /* BROMAC */
-  .hero .bromac-panel {
-    order: 1 !important;
-  }
-
-  /* UTILITY EX */
-  .hero .utility-panel {
-    order: 2 !important;
-  }
 
   /* IMAGES */
   .hero .hero-panel .hero-image {
@@ -3373,24 +2879,7 @@ align-items: flex-start;
     z-index: 5 !important;
   }
 
-  /* LIGHTNING DIVIDER */
-  .hero .bolt-divider {
-    position: absolute !important;
 
-    top: 50% !important;
-    left: 0 !important;
-
-    width: 100% !important;
-    height: 100px !important;
-
-    margin: 0 !important;
-
-    transform: translateY(-50%) !important;
-
-    z-index: 50 !important;
-
-    pointer-events: none !important;
-  }
 
   /* DESKTOP BOLT OFF */
   .hero .bolt-desktop {
@@ -3405,15 +2894,15 @@ align-items: flex-start;
     height: 100% !important;
   }
 
+@media (max-width: 768px) {
   .hero .bolt-mobile polyline {
     fill: none !important;
-
     stroke: #fff !important;
-    stroke-width: 8 !important;
-
+    stroke-width: 6px !important;
     stroke-linejoin: round !important;
     stroke-linecap: round !important;
   }
+}
 }
 
 .company-image {
@@ -3967,82 +3456,6 @@ align-items: flex-start;
 
 }
 
-/* =========================================
-   MOBILE HERO IMAGE FIX
-========================================= */
-
-@media (max-width: 768px) {
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-
-  .hero-panel {
-    position: relative;
-    width: 100%;
-    height: 55vh;
-    min-height: 400px;
-    overflow: hidden;
-  }
-
-  .hero-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  /* Bromac image */
-  .bromac-panel .hero-image {
-    object-position: center center;
-  }
-
-  /* Utility Ex image */
-  .utility-panel .hero-image {
-    object-position: center center;
-  }
-
-  /* Keep the text at the bottom */
-  .panel-footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    padding: 30px 20px;
-  }
-
-  .panel-footer h1 {
-    font-size: 26px;
-    line-height: 1.15;
-    margin-bottom: 15px;
-  }
-
-  /* Horizontal bolt between the two images */
-  .bolt-divider {
-    position: relative;
-    width: 100%;
-    height: 35px;
-    z-index: 5;
-  }
-
-  .bolt-desktop {
-    display: none;
-  }
-
-  .bolt-mobile {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-}
 
 /* Header Logo */
 .brand {
@@ -4066,6 +3479,7 @@ align-items: flex-start;
     width: 110px;
   }
 }
+
 /* Hero Panel Headings */
 .panel-footer h1 {
   font-size: 28px;
@@ -4091,6 +3505,196 @@ align-items: flex-start;
     font-size: 20px;
   }
 }
+
+
+
+/* =========================================
+   MOBILE HERO — MATCHED LIGHTNING BOLT
+   Desktop layout remains unchanged
+========================================= */
+
+@media (max-width: 768px) {
+
+.hero {
+  --mobile-panel-height: clamp(320px, 50vh, 440px);
+
+
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* Both photo panels */
+  .hero .hero-panel {
+    position: relative !important;
+    display: block !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    flex: none !important;
+  }
+
+  /* TOP PHOTO: BROMAC ELECTRIC */
+  .hero .bromac-panel {
+    z-index: 2 !important;
+    height: calc(var(--mobile-panel-height) + 12px) !important;
+
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      39.3% calc(100% - 18px),
+      50% 100%,
+      0 calc(100% - 12px)
+    ) !important;
+
+    -webkit-clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      39.3% calc(100% - 18px),
+      50% 100%,
+      0 calc(100% - 12px)
+    ) !important;
+  }
+
+  /* BOTTOM PHOTO: UTILITY EX */
+  .hero .utility-panel {
+    z-index: 1 !important;
+    height: var(--mobile-panel-height) !important;
+    margin-top: -24px !important;
+
+    clip-path: none !important;
+    -webkit-clip-path: none !important;
+  }
+
+  /* Photos fill their panels */
+  .hero .hero-panel .hero-image {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .hero .bromac-panel .hero-image {
+    object-position: center center !important;
+  }
+
+  .hero .utility-panel .hero-image {
+    object-position: center center !important;
+  }
+
+  /* Image overlays */
+  .hero .hero-panel .panel-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Text and buttons */
+  .hero .hero-panel .panel-footer {
+    position: absolute !important;
+    left: 22px !important;
+    right: 22px !important;
+    width: auto !important;
+    padding: 0 !important;
+    z-index: 4 !important;
+  }
+
+  .hero .bromac-panel .panel-footer {
+    bottom: 48px !important;
+  }
+
+  .hero .utility-panel .panel-footer {
+    bottom: 30px !important;
+  }
+
+  .hero .panel-footer h1 {
+    font-size: clamp(19px, 5.5vw, 28px) !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Lightning bolt sits directly on the photo boundary */
+  .hero .bolt-divider {
+    position: absolute !important;
+    top: calc(var(--mobile-panel-height) - 19px) !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 50px !important;
+    margin: 0 !important;
+    transform: none !important;
+    z-index: 10 !important;
+    pointer-events: none !important;
+  }
+
+  .hero .bolt-desktop {
+    display: none !important;
+  }
+
+  .hero .bolt-mobile {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: visible !important;
+  }
+
+  .hero .bolt-mobile polyline {
+    fill: none !important;
+    stroke: #fff !important;
+    stroke-width: 6px !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+    vector-effect: non-scaling-stroke;
+  }
+}
+
+/* FIX: REMOVE EXTRA SPACE BELOW MOBILE HERO */
+@media (max-width: 768px) {
+  .hero {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .hero .utility-panel {
+    margin-bottom: 0 !important;
+  }
+
+  .hero + section,
+  .hero + footer {
+    margin-top: 0;
+  }
+}
+
+
+
+
+/* Move footer tagline up on mobile only */
+@media (max-width: 768px) {
+  .tagline {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    transform: translate(-95px, -30px);
+  }
+}
+
 
 
 
